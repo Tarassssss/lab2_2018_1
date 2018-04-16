@@ -105,7 +105,7 @@ class StockExample(server.App):
 		week1 = params['week1']
 		week2 = params['week2']
 
-		f = glob.glob('C:/Users/taras/Desktop/study2/Proga/lab2/prog/cvs_files/*vhi_id_{}.csv'.format(p_id))[0]
+		f = glob.glob(r'C:/Users/taras/Desktop/study2/Proga/lab2/prog/cvs_files/*vhi_id_{}.csv'.format(p_id))[0]
 
 		df = pd.read_csv(f,' ',names = ['year', 'week','1','VCI','TCI','VHI',] ,index_col=False, skiprows=[0], header=None, skipinitialspace=True)
 		df=df[:-1].drop('1', axis=1)
