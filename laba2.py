@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+
 from spyre import server
 import re
 import glob
